@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10vh;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+
+       .navbar{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 90vw;
+        /* box-sizing: border-box; */
+        
+       }
+
+        .blue {
+            background-color: skyblue;
+            width: 20vw;
+            height: 20vh;
+            /* display: inline-block; */
+        }
+
+        .grey {
+            background-color: grey;
+            width: 70vw;
+            height: 20vh;
+            /* display: inline-block; */
+        }
+
+        /* .main {
+            display: flex;
+            justify-content: center;
+        } */
+        .maingrey {
+            background-color: grey;
+            width: 90vw;
+            height: 50vh;
+            
+            /* display: inline-block; */
+        }
+          
+        .wrapper {
+            width: 20%;
+        }
+
+        .orange{
+            background-color: burlywood;
+            width: 20vw;
+            height: 20vh;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 1px solid green; */
+            width: 90vw;
+            
+            
+        }
+
+        @media (max-width: 912px) {
+            .footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            /* border: 1px solid green; */
+            width: 90vw;
+    }
+
+    .orange{
+            background-color: burlywood;
+            width: 100vw;
+            height: 20vh;
+        }
+
+        .wrapper {
+            width: 100%;
+        }}
+
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="navbar">
+            <div class="blue"></div>
+            <div class="grey"></div>
+        </div>
+        <div class="main">
+            
+            <div class="maingrey"></div>
+        </div>
+
+        <div class="footer">
+            <div class="wrapper">
+                <div class="orange"></div>
+                </div>
+            <div class="wrapper">
+                <div class="orange"></div>
+                </div>
+            <div class="wrapper">
+                <div class="orange"></div>
+                </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
